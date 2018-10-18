@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kuka_kr60_support
+    relative_path: urdf/kuka_kr60.urdf
+  SRDF:
+    relative_path: config/kuka_kr60.srdf
+  CONFIG:
+    author_name: Jonathan Cacace
+    author_email: jonathan.cacace@gmail.com
+    generated_timestamp: 1539767696
