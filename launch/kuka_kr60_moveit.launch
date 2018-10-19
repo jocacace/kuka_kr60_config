@@ -13,6 +13,7 @@
 
 	<rosparam file="$(find kuka_kr60_support)/config/trajectory_control.yaml" command="load"/>
 
+
 	<node name="trajectory_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
 	output="screen" ns="/kuka_kr60" args="
 					  kuka_kr60_joint_controller"/>
@@ -22,7 +23,9 @@
 	 
  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
 	respawn="false" output="screen">
-    <remap from="/joint_states" to="/kuka_kr60/joint_states" />
+			<!--    
+			<remap from="/joint_states" to="/kuka_kr60/joint_states" />
+			-->
   </node>
 
 	

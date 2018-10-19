@@ -1,6 +1,6 @@
 controller_manager_ns: controller_manager
 controller_list:
-  - name: kuka_kr60/kuka_kr60_joint_controller
+  - name: position_trajectory_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
